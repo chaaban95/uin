@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: #14213D;
+    box-shadow: 0px 4px 5px 1px darkgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul a:hover {
+    color: #FCA311;
+    border-bottom: 2px solid currentColor;
+}
+
+nav ul a.active {
+    color: #FCA311;
+    border-bottom: 2px solid currentColor;
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu ul li {
+    padding-left: 15px;
+}
+
+form {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.frm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    font-weight: bold;
+    padding: 15px 0 10px 0;
+}
+
+form button {
+    width: 100px;
+    height: 35px;
+    align-self: flex-end;
+    font-weight: 600;
+}
+
+input {
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    width: 50%;
+    height: 35px;
+}
+
+textarea {
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+    height: 110px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    background-color: #14213D;
+    border: none;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.sec {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.sec2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sec2 .btn {
+    width: 90px;
+    height: 30px;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.art {
+    width: 30%;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 15px 0;
+    box-shadow: 0px 0px 5px 2px #E5E5E5;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+footer {
+    text-align: center;
+    background-color: #14213D;
+    box-shadow: 0px -3px 4px 1px darkgray;
+    margin-top: 60px;
+    color: white;
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .sec2 {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .art {
+        width: 100%;
+    }
+}
